@@ -1,0 +1,16 @@
+FUNCTION palindrome(word) : return_type
+VAR
+    left_pointer , right_pointer : INTEGER ;
+    word : STRING ;
+BEGIN
+    left_pointer = 0
+    right_pointer = length(word) - 1
+    WHILE (left_pointer <= right_pointer) DO
+        IF (word[left_pointer] != word[right_pointer]) THEN
+            return false
+        END_IF
+            ( left_pointer = left_pointer + 1)
+            (right_pointer = right_pointer - 1)
+        END WHILE 
+    RETURN value ;
+END FUNCTION
